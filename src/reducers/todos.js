@@ -1,6 +1,7 @@
 const todos = (state = [] , action ) => {
    switch(action.type){
     case 'ADD_TODO':
+     console.log("A todo has been added" , action.task);
      return [
        ...state,
        { id: action.id, task: action.task, completed: false }
